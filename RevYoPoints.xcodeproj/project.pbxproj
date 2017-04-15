@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		353BF1DA1E8CDB5E00334B8F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353BF1D91E8CDB5E00334B8F /* CloudKit.framework */; };
+		353EBA501EA17D8000741181 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353EBA4F1EA17D8000741181 /* ViewModel.swift */; };
+		353EBA521EA17DBA00741181 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353EBA511EA17DBA00741181 /* ViewModelProtocol.swift */; };
+		353EBA541EA17E9400741181 /* CustomerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353EBA531EA17E9400741181 /* CustomerEntity.swift */; };
 		3595D9AB1E39DC6E00782506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595D9AA1E39DC6E00782506 /* AppDelegate.swift */; };
 		3595D9AD1E39DC6E00782506 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595D9AC1E39DC6E00782506 /* ViewController.swift */; };
 		3595D9B01E39DC6E00782506 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3595D9AE1E39DC6E00782506 /* Main.storyboard */; };
@@ -26,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		353BF1D91E8CDB5E00334B8F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		353EBA4F1EA17D8000741181 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		353EBA511EA17DBA00741181 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		353EBA531EA17E9400741181 /* CustomerEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerEntity.swift; sourceTree = "<group>"; };
 		3595D9A71E39DC6E00782506 /* RevYoPoints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevYoPoints.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3595D9AA1E39DC6E00782506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3595D9AC1E39DC6E00782506 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +44,7 @@
 		3595D9BB1E39DC6E00782506 /* RevYoPointsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevYoPointsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3595D9BF1E39DC6E00782506 /* RevYoPointsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevYoPointsTests.swift; sourceTree = "<group>"; };
 		3595D9C11E39DC6E00782506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3595D9CA1E39DCB000782506 /* RevYoPoints.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RevYoPoints.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				353BF1DA1E8CDB5E00334B8F /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,7 @@
 				3595D9A91E39DC6E00782506 /* RevYoPoints */,
 				3595D9BE1E39DC6E00782506 /* RevYoPointsTests */,
 				3595D9A81E39DC6E00782506 /* Products */,
+				3595D9CB1E39DCB800782506 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +88,16 @@
 		3595D9A91E39DC6E00782506 /* RevYoPoints */ = {
 			isa = PBXGroup;
 			children = (
+				3595D9CA1E39DCB000782506 /* RevYoPoints.entitlements */,
 				3595D9AA1E39DC6E00782506 /* AppDelegate.swift */,
 				3595D9AC1E39DC6E00782506 /* ViewController.swift */,
 				3595D9AE1E39DC6E00782506 /* Main.storyboard */,
 				3595D9B11E39DC6E00782506 /* Assets.xcassets */,
 				3595D9B31E39DC6E00782506 /* LaunchScreen.storyboard */,
 				3595D9B61E39DC6E00782506 /* Info.plist */,
+				353EBA4F1EA17D8000741181 /* ViewModel.swift */,
+				353EBA511EA17DBA00741181 /* ViewModelProtocol.swift */,
+				353EBA531EA17E9400741181 /* CustomerEntity.swift */,
 			);
 			path = RevYoPoints;
 			sourceTree = "<group>";
@@ -94,6 +109,14 @@
 				3595D9C11E39DC6E00782506 /* Info.plist */,
 			);
 			path = RevYoPointsTests;
+			sourceTree = "<group>";
+		};
+		3595D9CB1E39DCB800782506 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				353BF1D91E8CDB5E00334B8F /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +170,15 @@
 					3595D9A61E39DC6D00782506 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = T33T396V4W;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					3595D9BA1E39DC6E00782506 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -201,8 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				353EBA521EA17DBA00741181 /* ViewModelProtocol.swift in Sources */,
 				3595D9AD1E39DC6E00782506 /* ViewController.swift in Sources */,
+				353EBA501EA17D8000741181 /* ViewModel.swift in Sources */,
 				3595D9AB1E39DC6E00782506 /* AppDelegate.swift in Sources */,
+				353EBA541EA17E9400741181 /* CustomerEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,11 +375,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RevYoPoints/RevYoPoints.entitlements;
 				DEVELOPMENT_TEAM = T33T396V4W;
 				INFOPLIST_FILE = RevYoPoints/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = banga.us.RevYoPoints;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -354,11 +390,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T33T396V4W;
+				CODE_SIGN_ENTITLEMENTS = RevYoPoints/RevYoPoints.entitlements;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RevYoPoints/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = banga.us.RevYoPoints;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -412,6 +450,7 @@
 				3595D9C61E39DC6E00782506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3595D9C71E39DC6E00782506 /* Build configuration list for PBXNativeTarget "RevYoPointsTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +459,7 @@
 				3595D9C91E39DC6E00782506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
